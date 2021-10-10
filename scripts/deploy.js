@@ -1,3 +1,6 @@
+// Deploy command
+// npx hardhat run scripts/deploy.js --network rinkeby
+
 const main = async () => {
   const nftContractFactory = await hre.ethers.getContractFactory('MyEpicNFT');
   const nftContract = await nftContractFactory.deploy();
